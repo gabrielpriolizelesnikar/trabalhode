@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Música</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de Música</h1>
+        <nav>
+            <a href="#" id="login-link">Login</a> | 
+            <a href="#" id="register-link">Registrar</a> |
+            <a href="#" id="logout-link" style="display: none;">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section id="music-list"></section>
+        <section id="pagination"></section>
+        <section id="cart">
+            <h2>Carrinho</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">Total: R$ 0.00</p>
+        </section>
+    </main>
+    <div id="login-form" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form-inner">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Senha:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <div id="register-form" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Registrar</h2>
+            <form id="register-form-inner">
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" required>
+                <label for="register-password">Senha:</label>
+                <input type="password" id="register-password" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
